@@ -3,7 +3,7 @@ from geopy.geocoders import Nominatim
 
 from bs4 import BeautifulSoup
 
-link = "http://olx.pl/oferta/mazda-xedos-9-2-3-miller-lpg-sekwencja-dvd-navi-full-CID5-IDgeZkF.html#49c8861f05"
+link = "http://olx.pl/oferta/opel-vectra-2-2-z-gazem-i-klima-elektryka-CID5-IDgks9D.html#5aa27adc3e"
 
 with urllib.request.urlopen(link) as response:
     html = response.read()
@@ -46,5 +46,6 @@ for t in data_tables:
     print(" %s : %s"%(label, value))
 
 opis = soup.find_all("p", {"class": "pding10 lheight20 large"})
+
 print(opis)
 
