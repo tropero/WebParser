@@ -7,6 +7,9 @@ import urllib.request
 from geopy.geocoders import Nominatim
 import re
 from bs4 import BeautifulSoup
+import PyMySQL
+
+
 
 list_of_links = []
 
